@@ -1,20 +1,13 @@
 <template>
   <div class="wrap-box">
-		
+	
   </div>
 </template>
 <script>
-export default {
-  name: 'wrap-box',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
-}
+
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-	.wrap-box{background: #fff;height: 100%;}
+	
 </style>

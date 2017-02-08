@@ -1,19 +1,33 @@
 <template>
-  <div class="app-wrapper">
-    <header class="app-header dashed dashed-bottom">
-      <h1><router-link to="/">Quan</router-link></h1>
-      <nav>
-        <router-link to="/" exact>名&nbsp;片</router-link>
-        <router-link to="/worklog">工作日志</router-link>
-      </nav>
-    </header>
-    <router-view 
-      :loader="loader"
-      @set-loader-state="setLoaderState">
-    </router-view>
+  <div class="wrap">
+    <div class='header'>
+      <div class="header-top">
+      	<div class="header-top-img">
+      		<img src="./assets/img/image.png" alt="" />
+      	</div>
+      </div>
+      <div class="header-con">
+      	<div class="header-con-name"><router-link to="/" exact>Quan</router-link></div>
+      	<div class="header-con-text">The darkest hour is before the dawn</div>
+      	<div class="header-con-nav">
+      		<ul>
+		        <router-link to="/" exact>Home</router-link>
+		        <router-link to="/worklog">worklog</router-link>
+      		</ul>
+      	</div>
+      </div>
+    </div>
+    <div class="wrap-con">
+	    <router-view 
+	      :loader="loader"
+	      @set-loader-state="setLoaderState">
+	    </router-view>
+    </div>
   </div>
 </template>
-
+<style>
+	@import url("assets/css/CaseUI.css");
+</style>
 <script>
   export default {
     data () {
@@ -21,24 +35,5 @@
         loader: true
       }
     },
-    methods: {
-      setLoaderState (state) {
-        this.loader = state
-      },
-      scroll2TopLinear () {
-        // 为什么是 18？
-        // 因为我希望滑动到顶部的时长为 300ms
-        // 显示屏的刷新速率为 60FPS (每秒刷新 60 次)
-        // (1000 / 60 = 16.666666666666668) => 即每 16.7ms 刷新一次 => 16.7ms/帧
-        // 所以：300 / 16.7 = 17.964071856287426 => 即滚动到顶部需要 18 帧
-        // scrollDistance => 每帧滚动的距离
-        scrollDistance = document.scrollingElement.scrollTop / 18
-        window.requestAnimationFrame(scroll2TopLinear)
-      }
-    }
   }
 </script>
-
-<style>
-
-</style>
