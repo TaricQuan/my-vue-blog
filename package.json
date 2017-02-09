@@ -9,7 +9,9 @@
     "build": "node build/build.js"
   },
   "dependencies": {
+    "highlight.js": "^9.9.0",
     "jquery": "^3.1.1",
+    "marked": "^0.3.6",
     "vue": "^2.1.0",
     "vue-resource": "^1.2.0",
     "vue-router": "^2.2.0"
