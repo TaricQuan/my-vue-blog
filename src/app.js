@@ -1,20 +1,9 @@
-import marked from 'Marked'
-import hljs from 'highlight.js'
-
-// 代码高亮
-marked.setOptions({
-  highlight: (code) => {
-    return hljs.highlightAuto(code).value
-  }
-})
-
 // 配置
 const config = {
-  owner: 'monine',
-  blogRepos: 'monine.github.io',
+  owner: 'taricquan',
+  blogRepos: 'taricquan.github.io',
   worklogRepos: 'worklog',
   host: 'https://api.github.com/',
-  access_token: '45b2a12600ba7b61987f' + '9c2600ad46a0822b88cc'
 }
 
 // 缓存
