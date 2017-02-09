@@ -5,15 +5,23 @@ import App from './App'
 
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import Home from './components/Home.vue'
-import Journal from './components/Journal.vue'
+import Article from './components/Article.vue'
+import ArticleList from './components/Article-List.vue'
+import ArticleContent from './components/Article-content.vue'
 import worklog from './components/worklog.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
 /* eslint-disable no-new */
 const routes = [
-  { path: '/', component: Home },
+  { path: '/', component: ArticleList },
+    { path: '/article', component: Article,
+    children: [
+      { path: '', name: 'article-list', component: ArticleList },
+      { path: ':num', name: 'article-content', component: ArticleContent },
+      { path: 'label/:labelName', name: 'label-article-list', component: ArticleList }
+    ]
+  },
   { path: '/worklog', component: worklog,}
 ]
 
