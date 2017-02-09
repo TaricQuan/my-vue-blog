@@ -8,7 +8,8 @@ import VueResource from 'vue-resource'
 import Article from './components/Article.vue'
 import ArticleList from './components/Article-List.vue'
 import ArticleContent from './components/Article-content.vue'
-import worklog from './components/worklog.vue'
+import Worklog from './components/Worklog.vue'
+import WorklogList from './components/Worklog-List.vue'
 
 Vue.use(VueRouter)
 Vue.use(VueResource)
@@ -22,7 +23,12 @@ const routes = [
       { path: 'label/:labelName', name: 'label-article-list', component: ArticleList }
     ]
   },
-  { path: '/worklog', component: worklog,}
+  { path: '/worklog', component: Worklog,
+    children: [
+      { path: '', name: 'worklog-list', component: WorklogList },
+      { path: ':num', name: 'worklog-content', component: ArticleContent }
+    ]
+  }
 ]
 
 const router = new VueRouter({
