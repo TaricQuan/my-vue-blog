@@ -1,5 +1,5 @@
 <template>
-<section class="article-content-page">
+  <section class="article-content-page">
     <transition name="fadeInOut">
       <article class="issues-content" v-if="($route.name === 'article-content' || 'worklog-content') && issuesInfo">
         <div class="article-labels">
