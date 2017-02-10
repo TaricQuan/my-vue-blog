@@ -14,7 +14,6 @@ const config = {
   blogRepos: 'TaricQuan.github.io',
   worklogRepos: 'worklog',
   host: 'https://api.github.com/',
-  access_token: '45b2a12600ba7b61987f' + '9c2600ad46a0822b88cc'
 }
 
 // 缓存

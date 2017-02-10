@@ -1,5 +1,5 @@
 <template>
-  <section class="article-content-page">
+  <section class="article-content-page wrap-box">
     <transition name="fadeInOut">
       <article class="issues-content" v-if="($route.name === 'article-content' || 'worklog-content') && issuesInfo">
         <div class="article-labels">
@@ -7,7 +7,7 @@
         </div>
         <h2 class="issues-content__title"><a href="javascript:;">{{ issuesInfo.title }}</a></h2>
         <p class="issues-content__time">CREATED AT {{ issuesInfo.createdAt }} _ UPDATED AT {{ issuesInfo.updatedAt }}</p>
-        <div v-html="issuesInfo.body"></div>
+        <div class="issues-content__con" v-html="issuesInfo.body"></div>
       </article>
     </transition>
     <div class="end-mark" v-if="issuesInfo"></div>
@@ -123,3 +123,6 @@
     }
   }
 </script>
+<style>
+	.article-page{height: 100%;}
+</style>

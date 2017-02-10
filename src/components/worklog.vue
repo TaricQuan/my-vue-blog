@@ -13,3 +13,10 @@
     }
   }
 </script>
+<style type="text/css">
+	.worklog-page{height: 100%;}
+	.worklog-list{padding: 20px;}
+	.worklog-list__item{display: inline-block;}
+	.worklog-list__item a{font-size:24px;color:#FDA545;}
+	.worklog-list__item:hover{border-bottom: 1px solid #FDA545;}
+</style>
