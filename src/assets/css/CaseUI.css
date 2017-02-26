@@ -28,6 +28,13 @@ del {	text-decoration: line-through;}
 /* tables still need 'cellspacing="0"' in the markup */
 table {border-collapse: collapse;border-spacing: 0;}
 
+pre{
+	white-space: pre-wrap;
+    word-wrap: break-word;
+	font-size: 14px;
+	line-height: 1.3
+}
+
 /************************end**************************/
 
 /************边距**************/
