@@ -42,7 +42,7 @@ pre{
 /************end**************/
 /************盒子**************/
 .wrap{width: 100%;box-sizing: border-box;overflow: hidden;}
-.wrap-box{width: 100%;box-sizing: border-box;overflow: auto;}
+.wrap-box{width: 100%;box-sizing: border-box;overflow: auto;background: #fff;}
 /************end**************/
 /************头部**************/
 .header{
@@ -85,9 +85,10 @@ pre{
 .js-inmobile .header-con{padding-left:80px;background:#fff;width: 100%;padding-top:0;box-sizing: border-box;}
 .js-inmobile .header-con-name{text-align: left;font-size: 16px;color: #333;line-height: 30px;}
 .js-inmobile .header-con-text{text-align: left;font-size: 12px;color: #999;line-height: 30px;}
-.js-inmobile .header-con-nav{ width: 36px;height:36px;background:red;position:absolute;top: 12px;right:22px;margin-top: 0;}
-.js-inmobile .header-con-nav ul{display: none;}
+.js-inmobile .header-con-nav{margin-top: 0;}
+.js-inmobile .header-con-nav ul{text-align: left;line-height: 2em;}
 .js-inmobile .header-con-nav a{color:#333;font-size: 0.6em;padding: 0 0.32em;}
+.router-link-active{color:#696969;border-bottom:1px solid #08c;}
 .js-inmobile .header-con-nav a:hover{color:#696969;border-bottom:1px solid #08c;}
 .js-inmobile .wrap{height: 100%;position: absolute;}
 .js-inmobile .issues-content__title{font-size: 18px}
@@ -97,7 +98,7 @@ pre{
 .issues-content{background: #fff;}
 /************end**************/
 /************盒子**************/
-.js-inmobile .wrap-con{top: 5em;left: 0;}
+.js-inmobile .wrap-con{top: 7em;left: 0;}
 .wrap-con{
 		position: absolute;
 	    right: 0;
