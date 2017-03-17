@@ -91,14 +91,15 @@ pre{
 .router-link-active{color:#696969;border-bottom:1px solid #08c;}
 .js-inmobile .header-con-nav a:hover{color:#696969;border-bottom:1px solid #08c;}
 .js-inmobile .wrap{height: 100%;position: absolute;}
-.js-inmobile .issues-content__title{font-size: 18px}
+.js-inmobile .issues-content__title{font-size: 18px;}
 .js-inmobile .issues-content__time{font-size:16px;}
-.js-inmobile .issues-content__con{margin: 20px 0;padding:0 20px;height: 12em;overflow:hidden;}
+.js-inmobile .issues-content__con{margin: 20px 0;padding:0 20px;}
+.js-inmobile .issues-content__hid{height: 12em;overflow: hidden;}
 .js-inmobile .article-list__item{background: #fff;}
 .issues-content{background: #fff;}
 /************end**************/
 /************盒子**************/
-.js-inmobile .wrap-con{top: 7em;left: 0;}
+.js-inmobile .wrap-con{top: 7em;left: 0;height: 50em;}
 .wrap-con{
 		position: absolute;
 	    right: 0;
@@ -120,6 +121,10 @@ pre{
 		padding:0 50px;
 		margin-top: 50px;
 	}
+  .issues-content__hid{
+    height: 300px;
+    overflow: hidden;
+  }
 	.issues-content__con p{
 		line-height: 1.3;
 		font-size: 16px;
