@@ -123,3 +123,6 @@
     }
   }
 </script>
+<style>
+	.article-page{height: 100%;}
+</style>
