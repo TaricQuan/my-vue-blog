@@ -8,6 +8,7 @@
       </div>
       <div class="header-con">
       	<div class="header-con-name">Quan</div>
+        
       	<div class="header-con-text">The darkest hour is before the dawn</div>
       	<div class="header-con-nav">
       		<ul>
