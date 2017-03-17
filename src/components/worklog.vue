@@ -14,7 +14,6 @@
   }
 </script>
 <style type="text/css">
-	.worklog-page{height: 100%;background: #fff;}
 	.worklog-list{padding: 20px;}
 	.worklog-list__item{display: inline-block;margin-right: 20px}
 	.worklog-list__item a{font-size:24px;color:#FDA545;}
