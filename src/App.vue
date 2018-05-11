@@ -11,8 +11,9 @@
       	<div class="header-con-text">The darkest hour is before the dawn</div>
       	<div class="header-con-nav">
       		<ul>
-		        <router-link to="/" exact>article</router-link>
-		        <router-link to="/worklog">worklog</router-link>
+      			<router-link to="/" exact>Home</router-link>
+		        <router-link to="/article">Article</router-link>
+		        <router-link to="/worklog">Worklog</router-link>
       		</ul>
       	</div>
       </div>
@@ -23,6 +24,7 @@
 	      @set-loader-state="setLoaderState">
 	    </router-view>
     </div>
+    <div class="app-tools__top"></div>
   </div>
 </template>
 <style>

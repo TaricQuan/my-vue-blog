@@ -1,6 +1,6 @@
 <template>
   <section class="article-list-page wrap-box">
-    <transition-group name="fadeInOut" tag="ul" style="padding: 0; margin: 0;">
+    <transition-group name="fadeInOut" tag="ul">
       <li class="article-list__item dashed dashed-thin dashed-bottom" v-for="article in articleListInfo.list" :key="article.id">
         <article>
           <div class="article-labels">

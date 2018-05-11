@@ -61,6 +61,7 @@
       window.scrollTo(0, 0)
       issuesNum = +this.$route.params.num
       this.$route.name === 'article-content' ? reposType = 'blog' : reposType = 'worklog'
+      
       // 从缓存内获取文章信息
       let cacheIssuesRepos = _cache.issues[reposType]
       if (Object.keys(cacheIssuesRepos)) {
