@@ -3,6 +3,8 @@
 import Vue from 'vue'
 import App from './App'
 
+import ElementUI from 'element-ui'
+import 'element-ui/lib/theme-chalk/index.css'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
 import Home from './components/home.vue'
@@ -12,6 +14,7 @@ import ArticleContent from './components/Article-content.vue'
 import Worklog from './components/Worklog.vue'
 import WorklogList from './components/Worklog-List.vue'
 
+Vue.use(ElementUI)
 Vue.use(VueRouter)
 Vue.use(VueResource)
 /* eslint-disable no-new */
