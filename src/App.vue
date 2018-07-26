@@ -11,7 +11,7 @@
       	<div class="header-con-text">The darkest hour is before the dawn</div>
       	<div class="header-con-nav">
       		<ul>
-      			<router-link to="/" exact>Home</router-link>
+      			<router-link to="/" exact>About</router-link>
 		        <router-link to="/article">Article</router-link>
 		        <router-link to="/worklog">Worklog</router-link>
       		</ul>

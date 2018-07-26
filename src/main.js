@@ -7,7 +7,7 @@ import ElementUI from 'element-ui'
 import 'element-ui/lib/theme-chalk/index.css'
 import VueRouter from 'vue-router'
 import VueResource from 'vue-resource'
-import Home from './components/home.vue'
+import About from './components/about.vue'
 import Article from './components/Article.vue'
 import ArticleList from './components/Article-List.vue'
 import ArticleContent from './components/Article-content.vue'
@@ -20,7 +20,7 @@ Vue.use(VueResource)
 /* eslint-disable no-new */
 const routes = [{
 		path: '/',
-		component: Home
+		component: About
 	},
 	{
 		path: '/article',

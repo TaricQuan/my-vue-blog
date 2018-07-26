@@ -1,5 +1,6 @@
 <template>
   <section class="worklog-list-page wrap-box">
+  	<h1>工作日志</h1>
     <transition-group class="worklog-list" name="fadeInOut" tag="ul" v-if="worklogListInfo.list.length">
       <li class="worklog-list__item" v-for="worklog in worklogListInfo.list" :key="worklog.id">
         <router-link :to="{name: 'worklog-content', params: { num: worklog.number }}">{{ worklog.title }}</router-link>
