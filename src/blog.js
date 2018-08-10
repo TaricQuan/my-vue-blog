@@ -29,6 +29,7 @@ let cache = {
 // 获取 issues 信息
 let getIssuesInfo = (issue) => {
   let _body = marked(issue.body);
+  _body = _body.replace(/[\r\n]/g,'<br/>')
   return {
     id: issue.id,
     number: issue.number,
